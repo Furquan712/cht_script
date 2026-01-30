@@ -1,6 +1,5 @@
-# 🤖 AIOFC Chat Widget - Client
+# 🤖 Convertss.com
 
-A production-ready, AI-powered chat widget with real-time communication capabilities, customizable themes, and seamless integration.
 
 ## 📋 Table of Contents
 
