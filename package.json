@@ -1,0 +1,43 @@
+{
+  "name": "aiofc-chat-widget",
+  "version": "1.0.0",
+  "description": "AI Chat Widget with customizable settings and real-time communication",
+  "main": "dist/cnvrtss.bundle.js",
+  "scripts": {
+    "setup": "bash setup.sh",
+    "start": "node server.js",
+    "dev": "cross-env NODE_ENV=development nodemon server.js",
+    "dev:build": "cross-env NODE_ENV=development node build.js --watch",
+    "build": "cross-env NODE_ENV=production node build.js",
+    "build:dev": "cross-env NODE_ENV=development node build.js",
+    "prod": "NODE_ENV=production node server.js",
+    "minify": "node scripts/minify.js",
+    "prebuild": "mkdir -p dist",
+    "test": "node scripts/test.js",
+    "deploy": "npm run build && node deploy.js"
+  },
+  "keywords": [
+    "chat-widget",
+    "ai",
+    "customer-support",
+    "socket-io",
+    "real-time"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.1",
+    "terser": "^5.26.0",
+    "chokidar": "^3.5.3"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
